@@ -65,10 +65,18 @@ a:hover {
 /* ---------------*/
 .nicecontent {
   background-color: var(--content-background);
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
   padding: 10px;
   font-family: Titillium Web, sans-serif;
+  text-align: justify;
 }
+p {
+  padding: 2rem;
+}
+
 img {
   border-radius: 10%;
 }
@@ -87,8 +95,8 @@ img {
 }
 
 .code {
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   background-color: #625b669a;
   font-family: monospace;
   font-size: 16px;
