@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadLibsGame</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="warmtop">
+        <a href="index.html"><h1>Ingas MadLibs SciFi Game</h1></a>
+        <nav>
+          <a href="About.html">About</a>
+          <a href="Blog.html">Blog</a>
+          <a href="madlibs.html">MadLibs Game</a>
+          <div class="oneline"></div>
+        </nav>
+      </div>
+      <div class="nicecontent" id="ml">
+        <script>
+          /*alert("Hey there!\nWait a sec, don't leave this page! <(^.^)>");
+          alert("I lost some words on my way back here.. <(0.0<)");
+          alert("Can you help me out with some so I can write my memoirs? (>v.v<)");
+          alert("THANK YOU SO MUCH <(^v^<)");*/
+
+          const storyArray = [
+          "My name is ", 
+          "-man. I am on the super secret mission to find ", 
+          " on the planet of ", 
+          "s. I travelled " , 
+          " years to get there. I met the ", 
+          " queen and she offered me some ", 
+          ". After having a few, we went ", 
+          " and I broke my ", 
+          ". The queen laughed and gave me a lot of ", 
+          "s to ease my pain. My mission was complete and I started my ", 
+          " years long journey home - to the planet of ", 
+          "s!!!"
+          ]
+
+          const responseArray = [ 
+          prompt("Enter a noun"),
+          prompt("Enter the name of a vegetable"), 
+          prompt("Enter the name of an animal"), 
+          prompt("Enter a ridiculously big number"), 
+          prompt("Enter your favourite drink"), 
+          prompt("Enter a verb"), 
+          prompt("Enter a bodypart"), 
+          prompt("Enter the name of another animal") 
+          ];
+
+          // add conditionals 
+
+          alert("Writing.. (>9.9)>|");
+
+          let story = "";
+
+          for (let i = 0; i < storyArray.length; i++) {
+      
+            if (i == 4) { 
+              story += storyArray[i]+responseArray[2];
+            }
+            else if (i == 5) {
+              story += storyArray[i]+responseArray[4];
+            }
+            else if (i == 6) {
+              story += storyArray[i]+responseArray[5];
+            }
+            else if (i == 7) {
+              story += storyArray[i]+responseArray[6];
+            }
+            else if (i == 8) {
+              story += storyArray[i]+responseArray[1];
+            }
+            else if (i == 9) {
+              story += storyArray[i]+responseArray[3];
+            } 
+            else if (i == 10) {
+              story += storyArray[i]+responseArray[7];
+            }
+            else if (i == 11){
+              story += storyArray[i];
+            }
+           else {
+             story += storyArray[i] + responseArray[i];
+            } 
+          }
+        
+          document.write(story)
+        </script>  
+                </br>
+                <center><button class="menubutton" onclick="window.location.href='./madlibs2.html';">AGAIN!
+                </button></center>    
+      </div>
+  </body>
+</html>
