@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <!--wrapper-->
+    <div class="bg-altrose space-y-5 lg:space-y-2 grid lg:grid-cols-5 lg:grid-rows-2 lg:h-[100vh] lg:w-[100vw]">
+        <header class="relative flex flex-col lg:g-border lg:w-40 lg:h-96">
+          <div class="flex justify-center px-4 py-3 lg:py-2">
+            <!--logo-->
+            <svg
+              width="70"
+              height="85"
+              viewBox="0 0 97 112"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M48.5 91C71.9721 91 91 71.9721 91 48.5C91 25.0279 71.9721 6 48.5 6C25.0279 6 6 25.0279 6 48.5C6 71.9721 25.0279 91 48.5 91ZM48.5 97C75.2858 97 97 75.2858 97 48.5C97 21.7142 75.2858 0 48.5 0C21.7142 0 0 21.7142 0 48.5C0 75.2858 21.7142 97 48.5 97Z"
+                fill="#93CBFF"
+              />
+              <path
+                d="M42.2097 33.712H53.7457V112H42.2097V33.712Z"
+                fill="#93CBFF"
+              />
+            </svg>
+          </div>
+          <!--horizontal lines-->
+          <div class="hidden lg:flex lg:col-span-1 lg:h-1 lg:w-64 lg:bg-lightblue lg:rounded-md"></div>
+          <div class="absolute top-20 right-0 my-5 h-1 w-full bg-lightblue lg:hidden"></div>
+          <div class="absolute top-24 right-0 my-5 h-1 w-9/12 bg-lightblue rounded-md lg:hidden"></div>
+          <nav class="hidden lg:flex flex-col">
+          <li><a href="./Projects.html">projects</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">about</a></li></nav>
+        </header>
+      <!--hero mobile-->
+      <section class="flex flex-col my-5 p-4 h-[715px] bg-halfbubble bg-no-repeat lg:hidden">
+        <div class="flex flex-col"><h1 class="flex text-4xl m-6">hello</h1>
+        <div class="flex h-1 bg-gradient-to-l from-altrose"></div>
+        <p class="flex text-lg w-1/2 m-5">
+          I am <br>and I'm building this website as mobile first. <br />
+          Cookie lollipop dragée apple pie pie. Cookie biscuit chupa chups
+          bonbon marzipan tootsie roll. Muffin cake shortbread chocolate
+          biscuit. I love danish muffin tootsie roll caramels I love. Biscuit
+          wafer I love lollipop sweet roll sugar plum. <br>
+          donut.<br>
+          somebody ate my berliner.
+        </p>
+      </section>
+      <!--hero desktop-->
+      <section class="hidden lg:flex lg:row-start-1 lg:row-span-2 lg:col-start-2 lg:col-span-4 lg:ml-48 lg:relative lg:overflow-clip">
+        <!--bubble-->
+        <div class="flex flex-col justify-center items-center bubbly rounded-full w-[55vw] h-[55vw] mt-16 relative">
+        <!--pic-->
+        <div class="absolute rounded-full opacity-90 right-14 top-12 bg-devil h-64 w-64 bg-no-repeat bg-center"></div>
+          <h1 class="text-4xl">hello</h1>
+          <div class="h-1 w-[40vw] bg-gradient-to-l from-paleblue  via-altrose "></div>
+          <p class="flex text-lg w-3/4 m-5">
+            I am Inga<br>and I'm building this website as mobile first. <br />
+            Cookie lollipop dragée apple pie pie. Cookie biscuit chupa chups
+            bonbon marzipan tootsie roll. Muffin cake shortbread chocolate
+            biscuit. I love danish muffin tootsie roll caramels I love. Biscuit
+            wafer I love lollipop sweet roll sugar plum. <br>
+            donut.<br>
+            somebody ate my berliner.
+          </p>
+          <button class="flex self-center justify-center items-center bg-lightaltrose rounded-md w-48 h-16 m-4 text-lg text-altrose hover:bg-lightblue hover:text-lightaltrose">CONTACT ME</button>
+        </div>
+      </section>
+      <!--cards-->
+      <div class="flex flex-col items-center lg:row-start-2 lg:col-start-1 lg:col-span-2 lg:items-start">
+      <section class="flex flex-col justify-center items-center">
+        <a href="./Projects.html">
+          <div class="flex flex-col bg-darkaltrose p-4 my-8 mx-2 w-80 rounded-lg">
+            <p class="leading-6 text-lg text-center">PROJECTS</p>
+            <p class="text-2xl underline">battleships</p>
+            <p>
+              27.02.2022<br />It’s finally playable! We added some soundeffects in
+              the saturday session. Still working on design issues.
+            </p>
+          </div>
+        </a>
+        <div class="flex flex-col bg-darkaltrose p-4 mx-2 w-80 rounded-md">
+          <p class="leading-6 text-lg text-center">BLOG</p>
+          <p class="text-2xl underline">tailwind</p>
+          <p>
+            03.03.2022<br />i like tailwind. tailwind is shit. i love tailwind. i hate tailwind. i guess it's okay. actually it's pretty nice..
+          </p>
+        </div>
+      </section>
+      <!--about-->
+      <section class="flex my-5 lg:hidden" id="about">
+        <div class="flex flex-col bg-lightblue/50 rounded-md mx-2 p-4 w-80">
+          <p class="leading-6 text-lg text-center">ABOUT</p>
+          <p class="text-2xl underline text-center">Inga P Traub</p>
+          <div class="bg-tinydevil h-48 bg-no-repeat bg-center"></div>
+          <p>I command you to hire me.
+            <li>born 1993 in Bremerhaven</li>
+            <li>currently learning @ Devhaus Academy</li>
+            <li>more room for CV stuff</li>
+            <button class="flex self-center justify-center items-center bg-lightaltrose rounded-md w-36 h-10 m-4">CONTACT ME</button>
+          </p></div>
+      </section>
+      </div>
+    </div>
+  </body>
+</html>
