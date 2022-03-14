@@ -1,133 +1,127 @@
 /*------------------
+  TAILWIND
+  -----------------*/
+
+/*------------------
  SETUP
  ------------------*/
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@200&display=swap");
 * {
   margin: 0px;
+  font-family: "Sen", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  --text-color: rgb(241, 215, 215);
-  --background-color: rgb(30, 37, 48);
-  --header-color: rgb(117, 99, 160);
-  --content-background: rgb(46, 56, 71);
-}
-
-.wrapper {
-  background-color: var(--background-color);
-  padding: 2rem;
+  --text-color: rgb(235, 235, 235);
+  --background-color: rgb(137, 130, 152);
+  --bubble-blue: rgb(147, 203, 255);
+  --card-background: rgba(77, 72, 88, 0.8);
 }
 
 body {
   background-color: var(--background-color);
+  /* height: 100vh; */
+
+/*.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "nav hero"
+    "cards hero";
+}
+
+/*----------------
+  NAV AND LOGO
+  --------------*/
+/*nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 8rem;
+  border: var(--bubble-blue) solid 4px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.horizontal-line {
+  height: 4px;
+  width: 20rem;
+  background-color: var(--bubble-blue);
+  /* border-radius: 90%; */
+
+/*nav > li {
+  list-style: none;
   color: var(--text-color);
-}
-
-/*-----------------
- HEADER
- -----------------*/
-.warmtop {
-  color: var(--header-color);
-  background-color: var(--background-color);
-  padding: 2%;
+  font-size: 24px;
   text-align: center;
-  font-family: Righteous, cursive;
+  padding: 2rem 0.5rem;
 }
 
-h1 {
-  font-size: 3rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem;
 }
 
-nav {
-  color: var(--header-color);
-  display: block;
-  font-family: Titillium Web, sans-serif;
-  font-size: 22px;
+/*--------------
+  INFO CARDS
+  -------------*/
+/*.card-section {
+  grid-area: cards;
+  display: flex;
+  flex-direction: column;
+  /* height: 45vh; */
+/*  width: 20rem;
 }
 
-a {
-  padding: 0rem 4rem;
-  text-decoration: none;
-  color: var(--header-color);
-}
-a:hover {
-  background-color: whitesmoke;
-}
-
-.oneline {
-  height: 1px;
-  background-color: lightgray;
-}
-/* ---------------*/
-/* MAIN */
-/* ---------------*/
-.nicecontent {
-  background-color: var(--content-background);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  padding: 10px;
-  font-family: Titillium Web, sans-serif;
-  text-align: justify;
-}
-p {
-  padding: 2rem;
+.card {
+  background-color: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: var(--text-color);
+  padding: 1rem;
 }
 
-img {
-  border-radius: 10%;
-}
-
-#quote {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 2%;
-  border-color: rgb(221, 214, 250);
-  border-width: 2px;
-  border-style: solid;
-  background-color: #222024fd;
-  box-shadow: 8px 2px 20px blue;
-}
-
-.code {
-  margin-left: 30%;
-  margin-right: 30%;
-  background-color: #625b669a;
-  font-family: monospace;
-  font-size: 16px;
-  color: rgb(207, 59, 195);
+.c-title {
+  line-height: 24px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-.menubutton {
-  color: indigo;
-  padding: 10px;
-  border-style: groove;
-  border-color: rgb(150, 131, 194);
-  border-width: 5px;
-  background-color: rgb(145, 156, 192);
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-shadow: 5px 3px 10px rgb(14, 17, 211);
+.c-header {
+  font-size: 24px;
+  text-decoration: underline;
 }
 
-button:hover {
-  background-color: rgb(179, 213, 214);
-  padding: 1%;
-  border-color: rgb(141, 48, 121);
-  color: rgb(110, 26, 96);
-  box-shadow: 5px 3px 20px rgb(0, 255, 242);
-}
+/*--------------
+  HERO SECTION
+  --------------*/
+/*.hero {
+  grid-area: hero;
+  display: flex;
+  align-items: center;
+  /* padding: 10rem; */
 
-table,
-td,
-th {
-  border: 1px solid rgb(107, 114, 129);
-  margin-left: 20%;
-  margin-right: 20%;
-}
+/*.mainbubble {
+  display: flex;
+  height: 90vh;
+  width: 90vh;
+  background: linear-gradient(
+    244.09deg,
+    rgba(147, 203, 255, 0.82) 18.78%,
+    rgba(183, 220, 236, 0) 81.22%
+  );
+  border-radius: 50%;
+  /* border: black solid 4px; */
+
+/*.mainbubble > h1 {
+  color: var(--text-color);
+} */
